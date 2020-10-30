@@ -44,7 +44,8 @@ function pageLoad() {
   // getting value - zero-based
   output = burger[1]
   output = burger[3] // undefined
-
+  // changing shit
+  
   // can test for this
   if (burger[5] == undefined) {
     console.log('there are only 3 ingredients')
