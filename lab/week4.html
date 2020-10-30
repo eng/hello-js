@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIEI-451: Lab</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d0bf6bf32c.js" crossorigin="anonymous"></script>
+  <script src="ride-data.js"></script>
+  <script src="week4.js"></script>
+  <script src="handler.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', pageLoad)
+    window.addEventListener('DOMContentLoaded', handleServiceChange)
+  </script>
+  <style>
+    h1 {
+      font-family: Comfortaa, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="p-8">
+  <div class="container text-center mx-auto">
+    <div class="inline-block p-4"><a href="#" class="service-select rounded-xl bg-gray-200 p-4">Noober X</a></div>
+    <div class="inline-block p-4"><a href="#" class="service-select rounded-xl bg-gray-200 p-4">Noober XL</a></div>
+    <div class="inline-block p-4"><a href="#" class="service-select rounded-xl bg-gray-200 p-4">Noober Purple</a></div>
+    <div class="inline-block p-4"><a href="#" class="service-select rounded-xl bg-gray-200 p-4">Noober Pool</a></div>
+    <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+      <i class="fas fa-car-side"></i>
+      <span class="level-of-service"></span>
+    </h1>
+
+    <div class="passengers"></div>
+  </div>
+</body>
+
+</html>
