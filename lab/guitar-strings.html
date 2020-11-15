@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musiccessories</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="mx-auto container">
+    <!-- Things you want to arrange horizontally need a flex container -->
+    <!-- items-center centers vertically -->
+    <div class="px-4 md:px-0 flex items-center mt-8">
+      <!-- Elements like h1, h2, h3, p, div are block-level elements -->
+      <h1 class="text-xl flex-auto">
+        <a href="index.html">
+          <span class="font-medium text-gray-500">Hi! Welcome to</span>
+          <span
+            class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">Musiccessories!</span>
+        </a>
+      </h1>
+
+      <p class="flex-auto text-right capitalize">
+        <!-- Elements like strong, em, span, img, a are inline elements -->
+        <!-- Inline elements are often nested inside block-level elements -->
+        <strong>No instruments.</strong> <em>Only accessories.</em>
+      </p>
+
+    </div>
+
+    <div class="h-full mt-8 md:flex">
+      <div class="md:w-1/2">
+        <a href="guitar-strings.html"><img class="w-full" src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"></a>
+      </div>
+      <div class="md:w-1/2 pl-8">
+        <h2 class="text-lg font-bold mb-4"><a href="guitar-strings.html">Guitar Strings</a></h2>
+        <div class="mb-4 text-gray-900">These are favored by many musicians around the globe. Made from a
+          nickel-plated,
+          steel wire wrapped around a
+          hex-shaped, steel core wire. The plain strings are made of specially tempered, tin-plated, high-carbon
+          steel,
+          producing a well-balanced tone.</div>
+        <div class="mt-auto text-purple-500 text-2xl">$5.49</div>
+        <p class="my-8"><a href="mailto:b-eng@kellogg.northwestern.edu" class="rounded text-white bg-purple-500 px-4 py-2">Order Now</a></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

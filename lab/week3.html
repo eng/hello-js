@@ -4,115 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KIEI-451: Lab</title>
+  <title>Musiccessories</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d0bf6bf32c.js" crossorigin="anonymous"></script>
-  <script src="ride-data.js"></script>
-  <script src="randomize.js"></script>
-  <script src="week3.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', pageLoad)
-    window.addEventListener('DOMContentLoaded', manipulateDOM)
-  </script>
-  <style>
-    h1 {
-      font-family: Comfortaa, sans-serif;
-    }
-  </style>
 </head>
 
-<body class="p-8">
-  <div class="container text-center mx-auto">
-    <h1 class="inline-block px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      <i class="fas fa-car-side"></i>
-      <span class="level-of-service">Noober X</span>
-    </h1>
+<body>
+  <div class="mx-auto container">
+    <!-- Things you want to arrange horizontally need a flex container -->
+    <!-- items-center centers vertically -->
+    <div class="px-4 md:px-0 flex items-center mt-8">
+      <!-- Elements like h1, h2, h3, p, div are block-level elements -->
+      <h1 class="text-xl flex-auto">
+        <a href="index.html">
+          <span class="font-medium text-gray-500">Hi! Welcome to</span>
+          <span
+            class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">Musiccessories!</span>
+        </a>
+      </h1>
 
-    <div class="border-4 border-gray-900 p-4 my-4 text-left passenger-1">
-      <div class="clearfix">
-        <div class="float-left">
-          <h2 class="text-2xl py-1 passenger-1-name">Foghorn Leghorn</h2>
-          <p class="font-bold text-gray-600 passenger-1-phone">(312) 555-1212</p>
-        </div>
-        <div class="float-right mt-2">
-          <span class="rounded-xl bg-gray-600 text-white p-2">
-            <span class="passenger-1-number-of-passengers">2 passengers</span> 
-          </span>
+      <p class="flex-auto text-right capitalize">
+        <!-- Elements like strong, em, span, img, a are inline elements -->
+        <!-- Inline elements are often nested inside block-level elements -->
+        <strong>No instruments.</strong> <em>Only accessories.</em>
+      </p>
+    </div>
+    <div class="md:-mx-4 mt-8 flex flex-wrap">
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+          <h2 class="text-lg font-bold mb-4"><a href="guitar-strings.html">Guitar Strings</a></h2>
+          <div class="mb-4">
+            <a href="guitar-strings.html"><img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80"></a>
+          </div>
+          <div class="mb-4 text-gray-900">These are favored by many musicians around the globe. Made from a
+            nickel-plated,
+            steel wire wrapped around a
+            hex-shaped, steel core wire. The plain strings are made of specially tempered, tin-plated, high-carbon
+            steel,
+            producing a well-balanced tone.</div>
+          <div class="mt-auto text-purple-500 text-2xl">$5.49</div>
         </div>
       </div>
-      <div class="mt-4 grid grid-cols-2">
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">PICKUP</div>
-          <p class="passenger-1-pickup-address-line-1">123 Main St</p>
-          <p class="passenger-1-pickup-address-line-2">Chicago, IL 60603</p>
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+          <h2 class="text-lg font-bold mb-4">Guitar Picks (12-pack)</h2>
+          <div class="mb-4"><img
+              src="https://images.unsplash.com/photo-1604227176135-2a20c22cad2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80">
+          </div>
+          <div class="mb-4 text-gray-900">A wider body and a rounded tip have made this pick a favorite with players of
+            every
+            style. Celluloid picks combine the traditional tone and feel of celluloid, with beautiful and unique colors.
+          </div>
+          <div class="mt-auto text-purple-500 text-2xl">$2.99</div>
         </div>
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">DROPOFF</div>
-          <p class="passenger-1-dropoff-address-line-1">123 Main St</p>
-          <p class="passenger-1-dropoff-address-line-2">Chicago, IL 60603</p>
+      </div>
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+          <h2 class="text-lg font-bold mb-4">Drum Sticks (Pair)</h2>
+          <div class="mb-4"><img
+              src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80">
+          </div>
+          <div class="mb-4 text-gray-900">These 100% hickory drum sticks are made in the USA.</div>
+          <div class="mt-auto text-purple-500 text-2xl">$3.99</div>
+        </div>
+      </div>
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+          <h2 class="text-lg font-bold mb-4">Violin Bow</h2>
+          <div class="mb-4"><img
+              src="https://images.unsplash.com/photo-1528032947483-4e1df543253a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80">
+          </div>
+          <div class="mb-4 text-gray-900">Made with an octagonal Brazilwood stick, a half-lined ebony frog and Mongolian
+            horsehair. It features a pearl eye and slide, nickel/silver ferrule and leather grip.</div>
+          <div class="mt-auto text-purple-500 text-2xl">$21.99</div>
+        </div>
+      </div>
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+          <h2 class="text-lg font-bold mb-4">Alto Saxophone Reeds (Box of 3)</h2>
+          <div class="mb-4"><img
+              src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80">
+          </div>
+          <div class="mb-4 text-gray-900">High-quality reeds designed for a wide variety of playing situations, these
+            are cut from the most flexible grade of cane.</div>
+          <div class="mt-auto text-purple-500 text-2xl">$9.99</div>
+        </div>
+      </div>
+      <div class="p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="border h-full p-4 flex flex-col">
+          <h2 class="text-lg font-bold mb-4">Music Stand</h2>
+          <div class="mb-4"><img
+              src="https://images.unsplash.com/photo-1519683384663-c9b34271669a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80">
+          </div>
+          <div class="mb-4 text-gray-900">A portable orchestral tripod music stand, ideal for orchestras, conductors,
+            musicians, and schools. Features a solid, oversized desk that provides ample and secure space for the
+            largest books and scores, and its built-in clips keeps music sheets stable throughout performances and
+            rehearsals.</div>
+          <div class="mt-auto text-purple-500 text-2xl">$26.99</div>
         </div>
       </div>
     </div>
-
-    <div class="border-4 border-gray-900 p-4 my-4 text-left passenger-2">
-      <div class="clearfix">
-        <div class="float-left">
-          <h2 class="text-2xl py-1 passenger-2-name">Foghorn Leghorn</h2>
-          <p class="font-bold text-gray-600 passenger-2-phone">(312) 555-1212</p>
-        </div>
-        <div class="float-right mt-2">
-          <span class="rounded-xl bg-gray-600 text-white p-2">
-            <span class="passenger-2-number-of-passengers">2 passengers</span>
-          </span>
-        </div>
-      </div>
-      <div class="mt-4 grid grid-cols-2">
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">PICKUP</div>
-          <p class="passenger-2-pickup-address-line-1">123 Main St</p>
-          <p class="passenger-2-pickup-address-line-2">Chicago, IL 60603</p>
-        </div>
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">DROPOFF</div>
-          <p class="passenger-2-dropoff-address-line-1">123 Main St</p>
-          <p class="passenger-2-dropoff-address-line-2">Chicago, IL 60603</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="border-4 border-gray-900 p-4 my-4 text-left passenger-3">
-      <div class="clearfix">
-        <div class="float-left">
-          <h2 class="text-2xl py-1 passenger-3-name">Foghorn Leghorn</h2>
-          <p class="font-bold text-gray-600 passenger-3-phone">(312) 555-1212</p>
-        </div>
-        <div class="float-right mt-2">
-          <span class="rounded-xl bg-gray-600 text-white p-2">
-            <span class="passenger-3-number-of-passengers">2 passengers</span>
-          </span>
-        </div>
-      </div>
-      <div class="mt-4 grid grid-cols-2">
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">PICKUP</div>
-          <p class="passenger-3-pickup-address-line-1">123 Main St</p>
-          <p class="passenger-3-pickup-address-line-2">Chicago, IL 60603</p>
-        </div>
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">DROPOFF</div>
-          <p class="passenger-3-dropoff-address-line-1">123 Main St</p>
-          <p class="passenger-3-dropoff-address-line-2">Chicago, IL 60603</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="my-8">
-      <a class="px-4 py-2 bg-green-500 hover:bg-green-400 border-b-4 border-green-700 text-white text-xl rounded-xl" href="week3.html">
-        Next Ride
-        <i class="ml-2 fas fa-forward"></i>
-      </a>
-    </p>
+    <h1 class="text-center text-4xl my-8">Ready to Order?</h1>
+    <h2 class="text-center text-3xl my-8">
+      <a href="mailto:b-eng@kellogg.northwestern.edu" class="rounded text-white bg-purple-500 px-4 py-2">Contact Us</a>
+    </h2>
   </div>
 </body>
 
