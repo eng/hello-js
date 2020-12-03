@@ -22,26 +22,26 @@ function handleDOM() {
     `
   }
 
-  if (promotion1) {
+  if (promotion1Icon || promotion1Description) {
     document.querySelector('.promotions').insertAdjacentHTML('beforeend', `
       <div class="md:w-1/3 my-4 p-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold text-xl">
-        ${promotion1}
+        ${promotion1Icon}&nbsp;&nbsp;&nbsp;${promotion1Description}
       </div>
     `)
   }
 
-  if (promotion2) {
+  if (promotion2Icon || promotion2Description) {
     document.querySelector('.promotions').insertAdjacentHTML('beforeend', `
       <div class="md:w-1/3 my-4 p-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-xl">
-        ${promotion2}
+        ${promotion2Icon}&nbsp;&nbsp;&nbsp;${promotion2Description}
       </div>
     `)
   }
 
-  if (promotion3) {
+  if (promotion3Icon || promotion3Description) {
     document.querySelector('.promotions').insertAdjacentHTML('beforeend', `
       <div class="md:w-1/3 my-4 p-4 bg-gradient-to-r from-pink-500 to-blue-500 text-white font-bold text-xl">
-        ${promotion3}
+        ${promotion3Icon}&nbsp;&nbsp;&nbsp;${promotion3Description}
       </div>
     `)
   }

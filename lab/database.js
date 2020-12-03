@@ -1,13 +1,15 @@
 let database = {
   promotions: [
-    { description: 'Buy 2 pairs of drum sticks and get a third pair for free!' },
-    { description: 'Spend $100 and get free shipping site-wide!' },
-    { description: 'Refer a friend and you will both receive a $10 gift card!' },
-    { description: 'Take advantage of our special K-12 education discounts!' },
-    { description: 'Take 15% off your total qualifying purchase of $150 or more!' },
-    { description: 'Enter to win a $100 gift card on us!' },
-    { description: 'New customers use promo code KIEI-451 for 10% off at checkout!' },
-    { description: 'Take 20% off your total qualifying purchase of $200 or more!' }
+    { type: 'discount', description: 'Buy 2 pairs of drum sticks and get a third pair for free!' },
+    { type: 'shipping', description: 'Spend $100 and get free shipping site-wide!' },
+    { type: 'discount', description: 'Refer a friend and you will both receive a $10 gift card!' },
+    { type: 'discount', description: 'Take advantage of our special K-12 education discounts!' },
+    { type: 'shipping', description: 'Free shipping on any of our woodwind accessories!' },
+    { type: 'discount', description: 'Take 15% off your total qualifying purchase of $150 or more!' },
+    { type: 'contest', description: 'Enter to win a $100 gift card on us!' },
+    { type: 'discount', description: 'New customers use promo code KIEI-451 for 10% off at checkout!' },
+    { type: 'discount', description: 'Take 20% off your total qualifying purchase of $200 or more!' },
+    { type: 'contest', description: 'For each $10 spent, you get one entry into our iPad contest!' }
   ],
   products: [
     {
