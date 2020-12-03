@@ -19,9 +19,17 @@ let promotion3        // expects an String describing the promotion
 
 function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
-
+  
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   console.log(database)
+  numberOfProducts = database.products.length
+  products = database.products
+  let index1 = Math.floor(Math.random() * database.promotions.length)
+  let index2 = Math.floor(Math.random() * database.promotions.length)
+  let index3 = Math.floor(Math.random() * database.promotions.length)
+  promotion1 = database.promotions[index1].description
+  promotion2 = database.promotions[index2].description
+  promotion3 = database.promotions[index3].description
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
