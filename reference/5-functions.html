@@ -41,7 +41,7 @@
 
       <p>Before we get to <em>how</em> to create our own functions, let's first discuss <em>why</em> we'd want to. Organizing our code into functions makes our code more reusable, readable, and far more maintainable than code written in a linear fashion, especially as our applications become more complex.</p>
 
-      <p>Now, on to how to do it. A function is a like a little mini-program within our application. It <strong>usually</strong> takes input and <strong>usually</strong> produces output. Emphasis on <strong>usually</strong>, because there are certainly cases where a function takes no input and/or produces no output. We'll get to that later.</p>
+      <p>Practically speaking, a function is a like a little mini-program within our application. It <strong>usually</strong> takes input and <strong>usually</strong> produces output. Emphasis on <strong>usually</strong>, because there are certainly cases where a function takes no input and/or produces no output. We'll get to that later.</p>
 
       <pre class="m-0 p-0">
         <code class="language-js">function yell(words) {
@@ -186,15 +186,31 @@
       <p>This code looks daunting at first, especially if we've never seen anything like it before. But it's really a matter of following the pattern as described above, in code:</p>
 
       <ol class="list-decimal list-inside">
-        <li><strong>Wait for an event to happen</strong> – <span class="bg-orange-100 text-red-400 font-mono p-1">window.addEventListener</span> is a built-in function in JavaScript. It takes two parameters – the event to listen for, and a function describing what to do when the event happens. In this case, the event we're waiting for is <span class="bg-orange-100 text-red-400 font-mono p-1">DOMContentLoaded</span> – simply JavaScript-speak for "when the page is loaded".</li>
+        <li><strong>Wait for an event to happen</strong> – <span class="bg-orange-100 text-red-400 font-mono p-1">window.addEventListener</span> is a built-in function in JavaScript. It takes two parameters – the event to listen for, and a function. In this case, the event we're waiting for is <span class="bg-orange-100 text-red-400 font-mono p-1">DOMContentLoaded</span> – simply JavaScript-speak for "when the page is loaded". The second parameter is a function describing what to do when the event happens.</li>
         <li><strong>Determine what to do</strong> – we've decided that we're going to write "This is the way." in big, bold letters, 5 times.</li>
         <li><strong>Manipulate the HTML</strong> – also known as "DOM manipulation" – what we're doing here is:</li>
           <ol class="list-decimal list-inside ml-4">
-            <li>Find an existing HTML element to manipulate. In this case, we've chosen an existing HTML element with the <em>class</em> of <span class="bg-orange-100 text-red-400 font-mono p-1">output</span>. Grab a reference to that element and store it in a variable, <span class="bg-orange-100 text-red-400 font-mono p-1">outputElement</span>. </li>
+            <li>Find an existing HTML element on the page to manipulate. In this case, we've chosen an existing HTML element with the <em>class</em> of <span class="bg-orange-100 text-red-400 font-mono p-1">output</span>. Grab a reference to that element and store it in a variable, <span class="bg-orange-100 text-red-400 font-mono p-1">outputElement</span>. </li>
             <li><span class="bg-orange-100 text-red-400 font-mono p-1">insertAdjacentHTML</span> is a built-in method that's used to insert HTML around or inside the element in question. This function takes two parameters as input – first, a position indicating where we'd like to insert our HTML; we almost always use <span class="bg-orange-100 text-red-400 font-mono p-1">beforeend</span>, i.e. inside the element, right before the closing tag. And the second parameter is a String of HTML content. We can use template literals (i.e. the backticks) to make it easier to insert full strings of HTML without worrying about the quotes.</li>
             <li>Repeat 5 times.</li>
           </ol>
       </ol>
+
+      <p>We'll notice that we've written the function that reacts to the page load event as an anonymous function. Alternatively, we can also store this function in a variable – let's call it <span class="bg-orange-100 text-red-400 font-mono p-1">handlePageLoad</span>.</p>
+
+      <pre class="m-0 p-0">
+        <code class="language-js">let handlePageLoad = function() {
+          for (let i = 0; i < 5; i++) { 
+            let outputElement = document.querySelector('.output')
+            outputElement.insertAdjacentHTML('beforeend', ` 
+              &lt;div class=&quot;text-3xl my-8&quot;&gt;This is the way.&lt;/div&gt;
+            `)
+          }
+        }
+        window.addEventListener('DOMContentLoaded', handlePageLoad)</code>
+      </pre>
+
+      <p>Some developers prefer the first style, as all code for handling a single event is in one block of code, whereas other developers find the second style more readable. It 100% comes down to personal preference.</p>
     </div>
 </body>
 

@@ -1,7 +1,3 @@
-cart = [
-  { sku: 123456, qty: 4 }
-]
-
 let database = {
   promotions: [
     { type: 'discount', description: 'Buy 2 pairs of drum sticks and get a third pair for free!' },
@@ -28,6 +24,12 @@ let database = {
       image: 'https://images.unsplash.com/photo-1604227176135-2a20c22cad2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80',
       price: 2.99,
       description: 'A wider body and a rounded tip have made this pick a favorite with players of every style. Celluloid picks combine the traditional tone and feel of celluloid, with beautiful and unique colors.'
+    },
+    {
+      name: "Drum Sticks (Pair)",
+      image: "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80",
+      price: 3.99,
+      description: "These 100% hickory drum sticks are made in the USA."
     }
   ]
 }

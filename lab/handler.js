@@ -1,6 +1,7 @@
 function handleDOM() {
   if (products && products.length) {
-    products.forEach(function (product) {
+    for (let i = 0; i < products.length; i++) {
+      let product = products[i]
       document.querySelector('.products').insertAdjacentHTML('beforeend', `
         <div class="p-4 w-full md:w-1/2 lg:w-1/3">
           <div class="border h-full p-4 flex flex-col">
@@ -13,7 +14,7 @@ function handleDOM() {
           </div>
         </div>
       `)
-    })
+    }
   }
 
   if (numberOfProducts && numberOfProducts > 0) {
