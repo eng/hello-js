@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KIEI-451: Functions</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-  <script src="6-functions.js"></script>
+  <script src="5-functions.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', pageLoad)
+    // window.addEventListener('DOMContentLoaded', pageLoad)
+    window.addEventListener('DOMContentLoaded', function () {
+      for (let i = 0; i < 5; i++) {
+        document.querySelector('.output').insertAdjacentHTML('beforeend', `
+          <div class="text-3xl my-8">This is the way.</div>
+        `)
+      }
+    })
   </script>
 </head>
 
@@ -18,18 +25,18 @@
     <table class="table-auto border-collapse border-2 border-gray-500">
       <tr>
         <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../index.html">Home</a></td>
-        <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../code-along/6-functions.html">Code
+        <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../code-along/5-functions.html">Code
             Along</a>
         </td>
-        <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../practice/6-functions.html">Practice</a>
+        <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../practice/5-functions.html">Practice</a>
         </td>
-        <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../reference/6-functions.html">Reference</a>
+        <td class="px-4 py-2 border"><a class="text-blue-500 underline" href="../reference/5-functions.html">Reference</a>
         </td>
       </tr>
     </table>
     <div class="border border-gray-400 bg-gray-200 p-4 my-4">
       Try it out! In the corresponding JavaScript file, <span
-        class="bg-orange-100 text-red-400 font-mono p-1">code-along/6-functions.js</span>,
+        class="bg-orange-100 text-red-400 font-mono p-1">code-along/5-functions.js</span>,
       try setting the value of the variable <span class="bg-orange-100 text-red-400 font-mono p-1">output</span>,
       to see how it affects the outcome of this page, when loaded or refreshed. It's also highly recommended to load
       this page with Chrome's JavaScript Console tab open. Tip: you can always use the
@@ -37,14 +44,6 @@
       JavaScript console.
     </div>
     <div class="bg-gray-800 text-gray-100 my-4 p-8">
-      <p class="uppercase text-sm font-bold mb-4 text-gray-600">Input</p>
-      <p class="mb-4">
-        <input type="text" class="dinner focus:outline-none w-64 px-4 py-2 text-gray-900 border-gray-900 rounded"
-          value="tacos">
-        <button
-          class="nom-nom-nom focus:outline-none bg-red-500 hover:bg-red-700 border-b-4 border-red-700 hover:border-red-500 font-bold py-2 px-4 text-sm leading-5 text-white rounded border border-transparent">Nom
-          nom nom</button>
-      </p>
       <p class="uppercase text-sm font-bold mb-4 text-gray-600">Output</p>
       <div class="output">
         <!-- Placeholder for the output of our JavaScript output variable -->

@@ -1,5 +1,8 @@
 let numberOfProducts        // expects a Number 
 let products                // expects an Array of product data
+let product1
+let product2
+let product3
 let promotion1Description   // expects a String describing the promotion
 let promotion2Description   // expects a String describing the promotion
 let promotion3Description   // expects a String describing the promotion

@@ -2,26 +2,6 @@ function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
-
-  // functions encapsulate functionality
-  // you can think of them as "mini-programs" within your program
-  // they take input and produce output
-  function yell(words) {
-    return `${words.toUpperCase()}!!!!!`
-  }
-
-  // input = stuff between the parentheses
-  // output = stuff after the return statement
-
-  output = yell('tacos')
-
-  function makeFullName(firstName, lastName) {
-    return `${firstName} ${lastName}`
-  }
-
-  output = makeFullName('Brian', 'Eng')
-  output = yell(makeFullName('Brian', 'Eng'))
-
   // functions are used to create methods of objects
   // here's the object we created before
   let profile = {
