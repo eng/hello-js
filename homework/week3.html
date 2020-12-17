@@ -7,14 +7,6 @@
   <title>KIEI-451: Lab</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d0bf6bf32c.js" crossorigin="anonymous"></script>
-  <script src="ride-data.js"></script>
-  <script src="randomize.js"></script>
-  <script src="week3.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', pageLoad)
-    window.addEventListener('DOMContentLoaded', manipulateDOM)
-  </script>
   <style>
     h1 {
       font-family: Comfortaa, sans-serif;
@@ -30,25 +22,25 @@
     </h1>
 
     <div class="border-4 border-gray-900 p-4 my-4 text-left passenger-1">
-      <div class="clearfix">
-        <div class="float-left">
+      <div class="flex">
+        <div class="w-1/2">
           <h2 class="text-2xl py-1 passenger-1-name">Foghorn Leghorn</h2>
           <p class="font-bold text-gray-600 passenger-1-phone">(312) 555-1212</p>
         </div>
-        <div class="float-right mt-2">
+        <div class="w-1/2 text-right">
           <span class="rounded-xl bg-gray-600 text-white p-2">
             <span class="passenger-1-number-of-passengers">2 passengers</span> 
           </span>
         </div>
       </div>
-      <div class="mt-4 grid grid-cols-2">
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">PICKUP</div>
+      <div class="mt-4 flex">
+        <div class="w-1/2">
+          <div class="text-sm font-bold text-gray-600">PICKUP</div>
           <p class="passenger-1-pickup-address-line-1">123 Main St</p>
           <p class="passenger-1-pickup-address-line-2">Chicago, IL 60603</p>
         </div>
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">DROPOFF</div>
+        <div class="w-1/2">
+          <div class="text-sm font-bold text-gray-600">DROPOFF</div>
           <p class="passenger-1-dropoff-address-line-1">123 Main St</p>
           <p class="passenger-1-dropoff-address-line-2">Chicago, IL 60603</p>
         </div>
@@ -56,25 +48,25 @@
     </div>
 
     <div class="border-4 border-gray-900 p-4 my-4 text-left passenger-2">
-      <div class="clearfix">
-        <div class="float-left">
+      <div class="flex">
+        <div class="w-1/2">
           <h2 class="text-2xl py-1 passenger-2-name">Foghorn Leghorn</h2>
           <p class="font-bold text-gray-600 passenger-2-phone">(312) 555-1212</p>
         </div>
-        <div class="float-right mt-2">
+        <div class="w-1/2 text-right">
           <span class="rounded-xl bg-gray-600 text-white p-2">
             <span class="passenger-2-number-of-passengers">2 passengers</span>
           </span>
         </div>
       </div>
-      <div class="mt-4 grid grid-cols-2">
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">PICKUP</div>
+      <div class="mt-4 flex">
+        <div class="w-1/2">
+          <div class="text-sm font-bold text-gray-600">PICKUP</div>
           <p class="passenger-2-pickup-address-line-1">123 Main St</p>
           <p class="passenger-2-pickup-address-line-2">Chicago, IL 60603</p>
         </div>
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">DROPOFF</div>
+        <div class="w-1/2">
+          <div class="text-sm font-bold text-gray-600">DROPOFF</div>
           <p class="passenger-2-dropoff-address-line-1">123 Main St</p>
           <p class="passenger-2-dropoff-address-line-2">Chicago, IL 60603</p>
         </div>
@@ -82,25 +74,25 @@
     </div>
 
     <div class="border-4 border-gray-900 p-4 my-4 text-left passenger-3">
-      <div class="clearfix">
-        <div class="float-left">
+      <div class="flex">
+        <div class="w-1/2">
           <h2 class="text-2xl py-1 passenger-3-name">Foghorn Leghorn</h2>
           <p class="font-bold text-gray-600 passenger-3-phone">(312) 555-1212</p>
         </div>
-        <div class="float-right mt-2">
+        <div class="w-1/2 text-right">
           <span class="rounded-xl bg-gray-600 text-white p-2">
             <span class="passenger-3-number-of-passengers">2 passengers</span>
           </span>
         </div>
       </div>
-      <div class="mt-4 grid grid-cols-2">
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">PICKUP</div>
+      <div class="mt-4 flex">
+        <div class="w-1/2">
+          <div class="text-sm font-bold text-gray-600">PICKUP</div>
           <p class="passenger-3-pickup-address-line-1">123 Main St</p>
           <p class="passenger-3-pickup-address-line-2">Chicago, IL 60603</p>
         </div>
-        <div>
-          <div class="my-4 text-sm font-bold text-gray-600">DROPOFF</div>
+        <div class="w-1/2">
+          <div class="text-sm font-bold text-gray-600">DROPOFF</div>
           <p class="passenger-3-dropoff-address-line-1">123 Main St</p>
           <p class="passenger-3-dropoff-address-line-2">Chicago, IL 60603</p>
         </div>
@@ -114,6 +106,15 @@
       </a>
     </p>
   </div>
+
+  <script src="https://kit.fontawesome.com/d0bf6bf32c.js" crossorigin="anonymous"></script>
+  <script src="ride-data.js"></script>
+  <script src="randomize.js"></script>
+  <script src="week3.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', pageLoad)
+    window.addEventListener('DOMContentLoaded', manipulateDOM)
+  </script>
 </body>
 
 </html>

@@ -13,7 +13,6 @@ let database = {
   ],
   products: [
     {
-      sku: '123456',
       name: 'Guitar Strings',
       image: 'https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80',
       price: 5.49,
